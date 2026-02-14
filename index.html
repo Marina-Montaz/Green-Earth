@@ -66,5 +66,79 @@
         </aside>
     </div>
 
-    
+
+    <!-- Modal -->
+    <div class="modal" id="treeModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- About Campaign -->
+    <section class="about-campaign" id="about">
+        <div class="about-content">
+            <h2>About the Campaign</h2>
+            <div>
+                <img src="assets/about.png" alt="Green plant" class="about-image">
+            </div>
+            <div class="about-text">
+                <p>Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we've planted over 500,000 trees across 30+ countries, restored critical wildlife habitats, and brought communities together for a greener future.</p>
+                <ul>
+                    <li>Restoration of natural habitats</li>
+                    <li>Improvement of air quality</li>
+                    <li>Support for local communities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="impact-content">
+            <h2>Our Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number">500K+</div>
+                    <div class="impact-label">Trees Planted</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">120+</div>
+                    <div class="impact-label">Communities Involved</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number">30+</div>
+                    <div class="impact-label">Countries Reached</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="plant">
+        <div class="form-container">
+            <h2>Plant a Tree Today</h2>
+            <form class="donation-form" onsubmit="handleDonation(event)">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select class="form-input" required>
+                        <option value="">Number of Trees</option>
+                        <option value="1">1 Tree</option>
+                        <option value="5">5 Trees</option>
+                        <option value="10">10 Trees</option>
+                        <option value="25">25 Trees</option>
+                        <option value="50">50 Trees</option>
+                        <option value="100">100 Trees</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-donate">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
     
